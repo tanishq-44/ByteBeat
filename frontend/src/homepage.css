@@ -1,0 +1,16 @@
+/* Animations for the tagline border */
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.25; }
+  50% { opacity: 0.6; }
+}
+
+@keyframes borderShift {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 200% 0%; }
+}
+
+.animated-gradient-border {
+  background: linear-gradient(to right, rgba(94, 234, 212, 0.3), rgba(165, 180, 252, 0.3), rgba(216, 180, 254, 0.3));
+  background-size: 200% 100%;
+  animation: pulseGlow 2s infinite ease-in-out, borderShift 3s infinite linear;
+} 
